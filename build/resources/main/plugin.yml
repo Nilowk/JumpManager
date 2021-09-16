@@ -1,0 +1,5 @@
+name: JumpManager
+version: 1.0.00
+author: Nilowk
+main: fr.nilowk.jumpmanager.Main
+api-version: 1.16

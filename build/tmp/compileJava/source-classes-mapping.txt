@@ -1,0 +1,6 @@
+fr/nilowk/jumpmanager/Main.java
+ fr.nilowk.jumpmanager.Main
+fr/nilowk/jumpmanager/listener/Navigation.java
+ fr.nilowk.jumpmanager.listener.Navigation
+fr/nilowk/jumpmanager/listener/GameManager.java
+ fr.nilowk.jumpmanager.listener.GameManager

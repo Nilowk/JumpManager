@@ -1,0 +1,274 @@
+teleport-point:
+  spawn:
+    id: "spawn"
+    world: "world"
+    x: 0.5
+    y: 111.0
+    z: 0.5
+    yaw: -90.0
+    pitch: 0.0
+
+  donjon:
+    id: "§8Nilowk's Dungeon"
+    world: "world"
+    x: 17.5
+    y: 110
+    z: 3.5
+    yaw: 0.0
+    pitch: 0.0
+
+  dropper:
+    id: "dropper"
+    world: "dropper"
+    x: 0.5
+    y: 111.0
+    z: 0.5
+    yaw: -90.0
+    pitch: 0.0
+
+game:
+  co-tp: 92
+  world: "world"
+
+message:
+  no-stats: "§4You Have No Stats"
+  checkpoint: "§6Checkpoint validated"
+  start: "§6You Start: "
+  finish: "§6You Have Finish: "
+
+in-jump:
+  azerty: "azerty"
+
+players:
+
+default-item:
+  warp-checkpoint:
+    item: "END_PORTAL_FRAME"
+    id: "§2Warp To Checkpoint"
+    description:
+    num: 1
+    slot: 0
+    func: "checkpoint"
+
+  nav:
+    item: "COMPASS"
+    id: "§9Navigation"
+    description:
+    num: 1
+    slot: 4
+    func: "open-menu"
+    menu: "Navigation"
+
+  warp-spawn:
+    item: "RED_BED"
+    id: "§4Warp To Spawn"
+    description:
+    num: 1
+    slot: 8
+    func: "teleport"
+    teleport-point: "spawn"
+
+menu:
+  navigation:
+    id: "Navigation"
+    size: 18
+    item:
+      easy:
+        item: "LIME_WOOL"
+        id: "§aEASY"
+        description:
+          - "category"
+        num: 1
+        slot: 2
+        func: "open-menu"
+        menu: "Easy"
+
+      medium:
+        item: "YELLOW_WOOL"
+        id: "§eMEDIUM"
+        description:
+          - "category"
+        num: 1
+        slot: 3
+        func: "open-menu"
+        menu: "Medium"
+
+      hard:
+        item: "RED_WOOL"
+        id: "§4HARD"
+        description:
+          - "category"
+        num: 1
+        slot: 4
+        func: "open-menu"
+        menu: "Hard"
+
+      extreme:
+        item: "PURPLE_WOOL"
+        id: "§5EXTREME"
+        description:
+          - "category"
+        num: 1
+        slot: 5
+        func: "open-menu"
+        menu: "Extreme"
+
+      impossible:
+        item: "BLACK_WOOL"
+        id: "§8IMPOSSIBLE"
+        description:
+          - "category"
+        num: 1
+        slot: 6
+        func: "open-menu"
+        menu: "Impossible"
+
+      stats:
+        item: "PAPER"
+        id: "§6STATS"
+        description:
+        num: 1
+        slot: 12
+        func: "stats"
+
+      dropper:
+        item: "HOPPER"
+        id: "§8DROPPER"
+        description:
+          - "go to dropper"
+        num: 1
+        slot: 14
+        func: "teleport"
+        teleport-point: "dropper"
+
+    glass_pane:
+      activated: true
+      color: "BLACK_STAINED"
+      name: " "
+      description:
+      slot:
+        - 0
+        - 1
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 13
+        - 15
+        - 16
+        - 17
+
+  easy:
+    id: "Easy"
+    size: 9
+    item:
+    glass_pane:
+      activated: true
+      color: "BLACK_STAINED"
+      name: "Aucun Pour Le Moment"
+      description:
+        - "Arrive Bientôt"
+      slot:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+
+  medium:
+    id: "Medium"
+    size: 9
+    item:
+    glass_pane:
+      activated: true
+      color: "BLACK_STAINED"
+      name: "Aucun Pour Le Moment"
+      description:
+        - "Arrive Bientôt"
+      slot:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+
+  hard:
+    id: "Hard"
+    size: 9
+    item:
+    glass_pane:
+      activated: true
+      color: "BLACK_STAINED"
+      name: "Aucun Pour Le Moment"
+      description:
+        - "Arrive Bientôt"
+      slot:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+
+  extreme:
+    id: "Extreme"
+    size: 9
+    item:
+      donjon:
+        item: "CRACKED_STONE_BRICKS"
+        id: "§8Nilowk's Dungeon"
+        description:
+          - "extreme"
+        num: 1
+        slot: 4
+        func: "teleport"
+        teleport-point: "§8Nilowk's Dungeon"
+    glass_pane:
+      activated: false
+      color: "BLACK_STAINED"
+      name: "Aucun Pour Le Moment"
+      description:
+        - "Arrive Bientôt"
+      slot:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+
+  impossible:
+    id: "Impossible"
+    size: 9
+    item:
+    glass_pane:
+      activated: true
+      color: "BLACK_STAINED"
+      name: "Aucun Pour Le Moment"
+      description:
+        - "Arrive Bientôt"
+      slot:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
